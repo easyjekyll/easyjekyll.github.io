@@ -9,7 +9,7 @@ name: vjava114
 description: Web Developer from Somewhere
 
 # URL of your avatar or profile pic (you could use your GitHub profile pic)
-avatar: http://vjava114.github.io/images/½Ã¹Ù°ß.jpg
+avatar: http://vjava114.github.io/images/dog.jpg
 
 #
 # Flags below are optional
@@ -23,7 +23,7 @@ footer-links:
   email: vjava114@gmail.com
   facebook: 
   flickr: 
-  github: https://github.com/vjava114/vjava114.github.io/tree/master/_posts
+  github: vjava114/vjava114.github.io/tree/master/_posts
   instagram: 
   linkedin: 
   pinterest: 

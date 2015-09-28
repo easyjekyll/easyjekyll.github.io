@@ -9,7 +9,7 @@ name: vjava114
 description: Web Developer from Somewhere
 
 # URL of your avatar or profile pic (you could use your GitHub profile pic)
-avatar: https://vjava114.github.io/images/½Ã¹Ù°ß.jpg
+avatar: https://raw.githubusercontent.com/barryclark/jekyll-now/master/images/jekyll-logo.png
 
 #
 # Flags below are optional
@@ -20,10 +20,10 @@ timezone: Asia/Seoul
 # Includes an icon in the footer for each username you enter
 footer-links:
   dribbble: 
-  email: vjava114@gmail.com
+  email: 
   facebook: 
   flickr: 
-  github: https://github.com/vjava114/vjava114.github.io/tree/master/_posts
+  github: barryclark/jekyll-now
   instagram: 
   linkedin: 
   pinterest: 
