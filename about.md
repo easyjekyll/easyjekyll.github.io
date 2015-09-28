@@ -10,7 +10,7 @@ php 를 해본적이 있기에 wordpress 를 해 볼까? 주변에서 많이 쓰
 
   처음에는 Jekyll now 관련하여 많은 블로그를 참조 하면서 만드는 재미가 있었습니다. tag 검색 기능 도 만들고, pagination 도 구성을 했죠. 이제 tag 를 하나의 화면 에서 view 해 주는 page 를 만드려던 차에, 위의 기능을 모두 구현해 놓은 repository 가  이미 존재 하고 있다는 사실을 알게 되었습니다. 너무 빨리 알았네요. 하마터면 tag view page 마저 다 만들고 나서 봤을뻔 했지 뭡니까 ㅎㅎ
 
-###### 제가 참조한 궁극의 블로그
+**제가 참조한 궁극의 블로그**
 - [초보자를 위한 Jekyll Blog 시작하기 블로그](http://halryang.net/Jekyll-Blogging-For-Beginners/)
 - [제작자분의 repository](https://github.com/easyjekyll/easyjekyll.github.io)
 
