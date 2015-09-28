@@ -4,6 +4,7 @@ title: About
 permalink: /about/
 ---
 
+# 만들며
   좋은 지식을 정리하고 공유하여 모두에게 이롭게 하고자 블로깅을 시작 하고자 하였습니다. (어마어마한 포부...)
 php 를 해본적이 있기에 wordpress 를 해 볼까? 주변에서 많이 쓰는 tistory 를 해 볼까? JAVA 로 한번 프로젝트를 만들어 볼까? 거의 일주일을 고민 한 끝에, 무려 정적인 페이지로만 포스팅을 한다는 Jekyll 이 궁금해 졌습니다. 게다가 github 에 개인 홈페이지를 hosting 하려다 말았던 전과도 있었기에 도전삼아 Github & Jekyll 을 이용하여 블로그를 구성 하기로 마음 먹었습니다. 공짜 hosting에 無 WAS 구성 이라니. 이런게 신박하게 느껴지는걸 보니 junior 딱지를 벗기엔 아직 멀었나 봅니다. 남들은 몇년전부터 하고있는 서비스인데 말이죠.
 
@@ -18,12 +19,12 @@ php 를 해본적이 있기에 wordpress 를 해 볼까? 주변에서 많이 쓰
   
 
 
-### Information
+# Information
 
 - WEB developer
 - JAVA, JavaScript & JQuery, Mysql
 - github , slack, trello, eclipse 등 생산성 향상을 위한 tool 연습중
 
-### Contact me
+# Contact me
 
 [vjava114@gmail.com](mailto:vjava114@gmail.com)
