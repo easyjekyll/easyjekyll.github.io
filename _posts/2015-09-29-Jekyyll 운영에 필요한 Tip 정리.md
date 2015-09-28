@@ -1,11 +1,11 @@
 ---
 layout: post
 title: Jekyll 운영에 필요한 Tip
-tags: jekyll tip
+tags: jekyll tip 초보
 ---
 
 
-# Front matter 
+# Front matter 작성 예
 
     ---
     layout: post
