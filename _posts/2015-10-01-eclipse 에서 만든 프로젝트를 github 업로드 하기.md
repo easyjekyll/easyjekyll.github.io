@@ -17,7 +17,7 @@ Git 선택
 
 ![3]({{site.url}}/images/post_img/eclipse 에서 프로젝트를 local repository 에 fetch 하기/3.png)
 target 디렉토리 선택
-* Working directory 는 소스를 이동시킬 target directory 라고 보면 된다. 사진에서의 Working directory는 remote 에서 clone 받은 repo 의 위치가 D:\GItHubLocalRepo\danal.kcredit 일 경우 저렇게 표시되는 것 이다.*  
+*Working directory 는 소스를 이동시킬 target directory 라고 보면 된다. 사진에서의 Working directory는 remote 에서 clone 받은 repo 의 위치가 D:\GItHubLocalRepo\danal.kcredit 일 경우 저렇게 표시되는 것 이다.*  
 
 
 ![4]({{site.url}}/images/post_img/eclipse 에서 프로젝트를 local repository 에 fetch 하기/4.png)
