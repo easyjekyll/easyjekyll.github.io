@@ -32,16 +32,16 @@ remote 에 있는 branch 모두 체크 후 Next
 
 
 
-![5]({{site.url}}/images/post_img/GitHub 에서 eclipse 로 프로젝트 import 하기/6.png)
+![6]({{site.url}}/images/post_img/GitHub 에서 eclipse 로 프로젝트 import 하기/6.png)
 eclipse Git Repositories 에 추가가 되고 (실제로 내 pc에 clone 되어있는 상태임) 우클릭하여 Import Projects 선택
 
 
 
-![6]({{site.url}}/images/post_img/GitHub 에서 eclipse 로 프로젝트 import 하기/7.png)
+![7]({{site.url}}/images/post_img/GitHub 에서 eclipse 로 프로젝트 import 하기/7.png)
 Working Directory 밑에 있는 Import 할 프로젝트 선택
 
 
-![1]({{site.url}}/images/post_img/GitHub 에서 eclipse 로 프로젝트 import 하기/8.png)
+![8]({{site.url}}/images/post_img/GitHub 에서 eclipse 로 프로젝트 import 하기/8.png)
 Finish
 
 
