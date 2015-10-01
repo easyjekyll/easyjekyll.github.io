@@ -37,14 +37,13 @@ eclipse Git Repositories 에 추가가 되고 (실제로 내 pc에 clone 되어�
 
 
 
-![7]({{site.url}}/images/post_img/GitHub 에서 eclipse 로 프로젝트 import 하기/7.png)
+![1]({{site.url}}/images/post_img/GitHub 에서 eclipse 로 프로젝트 import 하기/7.png)
 Working Directory 밑에 있는 Import 할 프로젝트 선택
 
 
-![8]({{site.url}}/images/post_img/GitHub 에서 eclipse 로 프로젝트 import 하기/8.png)
+![1]({{site.url}}/images/post_img/GitHub 에서 eclipse 로 프로젝트 import 하기/8.png)
 Finish
 
 
 
 
-이렇게 하여 github의 repository 내에 내가 작성 중이던 project를 업로드 하였습니다.
