@@ -20,14 +20,14 @@ permalink: /about/
 
 
 
-### Information
+### Skil inventory
 
 - Web Developer
 - JAVA, JavaScript & jQuery, Mysql
 - GitHub, slack, trello, eclipse
 
 
-
+### Hobby 
 
 
 ### Contact me
