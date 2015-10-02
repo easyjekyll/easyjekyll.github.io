@@ -4,8 +4,8 @@ tags: git eclipse
 ---
 
 
-github ¿¡´Â clone URI ¸¦ Á¦°øÇÑ´Ù. ÀÌ URI¸¦ ÀÌ¿ëÇÏ¿© desktop ¿¡ ¼Ò½º¸¦ º¹»ç ÇØ ¿Ã¼ö°¡ ÀÖ°í ÀÚµ¿À¸·Î origin-client °ü°è°¡ ¼³Á¤µÈ´Ù. ´ç¿¬È÷ client ¿¡¼­ÀÇ ¼öÁ¤»çÇ×À» origin À¸·Î commit & push ÇÒ ¼ö°¡ ÀÖ°í, 
-ÀÌ·¯ÇÑ ¿ø¸®¸¦ ÀÌ¿ëÇØ svn°ú ºñ½ÁÇÑ È¯°æÀ» ¼ÂÆÃ ÇÒ °Í ÀÌ´Ù.
+github ì—ëŠ” clone URI ë¥¼ ì œê³µí•œë‹¤. ì´ URIë¥¼ ì´ìš©í•˜ì—¬ desktop ì— ì†ŒìŠ¤ë¥¼ ë³µì‚¬ í•´ ì˜¬ìˆ˜ê°€ ìˆê³  ìë™ìœ¼ë¡œ origin-client ê´€ê³„ê°€ ì„¤ì •ëœë‹¤. ë‹¹ì—°íˆ client ì—ì„œì˜ ìˆ˜ì •ì‚¬í•­ì„ origin ìœ¼ë¡œ commit & push í•  ìˆ˜ê°€ ìˆê³ , 
+ì´ëŸ¬í•œ ì›ë¦¬ë¥¼ ì´ìš©í•´ svnê³¼ ë¹„ìŠ·í•œ í™˜ê²½ì„ ì…‹íŒ… í•  ê²ƒ ì´ë‹¤.
 
 
 
@@ -13,37 +13,39 @@ github ¿¡´Â clone URI ¸¦ Á¦°øÇÑ´Ù. ÀÌ URI¸¦ ÀÌ¿ëÇÏ¿© desktop ¿¡ ¼Ò½º¸¦ º¹»ç ÇØ ¿
 
 
 
-![1]({{site.url}}/images/post_img/GitHub ¿¡¼­ eclipse ·Î ÇÁ·ÎÁ§Æ® import ÇÏ±â/1.png)
-Git Repositories Ã¢¿¡¼­ Clone a Git Repository and add the clone to this view Å¬¸¯
-**»çÁø¿¡¼­´Â Àß ¾Èº¸ÀÌ³×¿ä. ¾ÆÀÌÄÜ Àß È®ÀÎ ÇØ ÁÖ¼¼¿ä.**
+![1]({{site.url}}/images/post_img/GitHub ì—ì„œ eclipse ë¡œ í”„ë¡œì íŠ¸ import í•˜ê¸°/1.png)
+Git Repositories ì°½ì—ì„œ Clone a Git Repository and add the clone to this view í´ë¦­
 
 
-![1]({{site.url}}/images/post_img/GitHub ¿¡¼­ eclipse ·Î ÇÁ·ÎÁ§Æ® import ÇÏ±â/2.png)
-clone URI ¸¦ ÀÔ·ÂÇÏ¸é ³ª¸ÓÁö blank ´Â ÀÚµ¿ ÀÔ·ÂµÊ.
+**ì‚¬ì§„ì—ì„œëŠ” ì˜ ì•ˆë³´ì´ë„¤ìš”. ì•„ì´ì½˜ ì˜ í™•ì¸ í•´ ì£¼ì„¸ìš”.**
 
 
-![1]({{site.url}}/images/post_img/GitHub ¿¡¼­ eclipse ·Î ÇÁ·ÎÁ§Æ® import ÇÏ±â/3.png)
-remote ¿¡ ÀÖ´Â branch ¸ğµÎ Ã¼Å© ÈÄ Next
+![1]({{site.url}}/images/post_img/GitHub ì—ì„œ eclipse ë¡œ í”„ë¡œì íŠ¸ import í•˜ê¸°/2.png)
+clone URI ë¥¼ ì…ë ¥í•˜ë©´ ë‚˜ë¨¸ì§€ blank ëŠ” ìë™ ì…ë ¥ë¨.
 
 
-![1]({{site.url}}/images/post_img/GitHub ¿¡¼­ eclipse ·Î ÇÁ·ÎÁ§Æ® import ÇÏ±â/4.png)
-±×³É ±âº»¼³Á¤À¸·Î µÎ°í Finish
+![1]({{site.url}}/images/post_img/GitHub ì—ì„œ eclipse ë¡œ í”„ë¡œì íŠ¸ import í•˜ê¸°/3.png)
+remote ì— ìˆëŠ” branch ëª¨ë‘ ì²´í¬ í›„ Next
 
 
-
-![1]({{site.url}}/images/post_img/GitHub ¿¡¼­ eclipse ·Î ÇÁ·ÎÁ§Æ® import ÇÏ±â/6.png)
-eclipse Git Repositories ¿¡ Ãß°¡°¡ µÇ°í (½ÇÁ¦·Î ³» pc¿¡ clone µÇ¾îÀÖ´Â »óÅÂÀÓ) ¿ìÅ¬¸¯ÇÏ¿© Import Projects ¼±ÅÃ
+![1]({{site.url}}/images/post_img/GitHub ì—ì„œ eclipse ë¡œ í”„ë¡œì íŠ¸ import í•˜ê¸°/4.png)
+ê·¸ëƒ¥ ê¸°ë³¸ì„¤ì •ìœ¼ë¡œ ë‘ê³  Finish
 
 
 
-![1]({{site.url}}/images/post_img/GitHub ¿¡¼­ eclipse ·Î ÇÁ·ÎÁ§Æ® import ÇÏ±â/7.png)
-Working Directory ¹Ø¿¡ ÀÖ´Â Import ÇÒ ÇÁ·ÎÁ§Æ® ¼±ÅÃ
+![1]({{site.url}}/images/post_img/GitHub ì—ì„œ eclipse ë¡œ í”„ë¡œì íŠ¸ import í•˜ê¸°/6.png)
+eclipse Git Repositories ì— ì¶”ê°€ê°€ ë˜ê³  (ì‹¤ì œë¡œ ë‚´ pcì— clone ë˜ì–´ìˆëŠ” ìƒíƒœì„) ìš°í´ë¦­í•˜ì—¬ Import Projects ì„ íƒ
 
 
-![1]({{site.url}}/images/post_img/GitHub ¿¡¼­ eclipse ·Î ÇÁ·ÎÁ§Æ® import ÇÏ±â/8.png)
+
+![1]({{site.url}}/images/post_img/GitHub ì—ì„œ eclipse ë¡œ í”„ë¡œì íŠ¸ import í•˜ê¸°/7.png)
+Working Directory ë°‘ì— ìˆëŠ” Import í•  í”„ë¡œì íŠ¸ ì„ íƒ
+
+
+![1]({{site.url}}/images/post_img/GitHub ì—ì„œ eclipse ë¡œ í”„ë¡œì íŠ¸ import í•˜ê¸°/8.png)
 Finish
 
 
 
 
-ÀÌ·¸°Ô ÇÏ¿© githubÀÇ repository ³»¿¡ ³»°¡ ÀÛ¼º ÁßÀÌ´ø project¸¦ ¾÷·Îµå ÇÏ¿´½À´Ï´Ù.
+ì´ë ‡ê²Œ í•˜ì—¬ githubì˜ repository ë‚´ì— ë‚´ê°€ ì‘ì„± ì¤‘ì´ë˜ projectë¥¼ ì—…ë¡œë“œ í•˜ì˜€ìŠµë‹ˆë‹¤.
