@@ -3,13 +3,14 @@
 #
 
 # Name of your site (displayed in the header)
-name: Your Name
+name: sleeperbus
 
 # Short bio or description (displayed in the header)
-description: Web Developer from Somewhere
+description: News / Tech
 
 # URL of your avatar or profile pic (you could use your GitHub profile pic)
-avatar: https://raw.githubusercontent.com/barryclark/jekyll-now/master/images/jekyll-logo.png
+avatar: https://avatars1.githubusercontent.com/u/936254?v=3&s=140
+#avatar: https://raw.githubusercontent.com/barryclark/jekyll-now/master/images/jekyll-logo.png
 
 #
 # Flags below are optional
@@ -20,15 +21,15 @@ timezone: Asia/Seoul
 # Includes an icon in the footer for each username you enter
 footer-links:
   dribbble: 
-  email: 
+  email: sleeperbus@gmail.com
   facebook: 
   flickr: 
-  github: barryclark/jekyll-now
+  github: sleeperbus
   instagram: 
   linkedin: 
   pinterest: 
   rss: # just type anything here for a working RSS icon, make sure you set the "url" above!
-  twitter: jekyllrb
+  twitter: sleeperbus
   stackoverflow: # your stackoverflow profile, e.g. "users/50476/bart-kiers"
 
 # Your disqus shortname, entering this will enable commenting on posts

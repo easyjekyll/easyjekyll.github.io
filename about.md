@@ -4,12 +4,8 @@ title: About
 permalink: /about/
 ---
 
-Some information about you!
-
-### More Information
-
-A place to include any other types of information that you'd like to include about yourself. 
+매일 쏟아져 나오는 많은 정보 중 취할 만한 것들을 다룹니다.
 
 ### Contact me
 
-[email@domain.com](mailto:email@domain.com)
+[sleeperbus@gmail.com](mailto:sleeperbus@gmail.com)
