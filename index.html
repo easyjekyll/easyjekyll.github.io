@@ -13,13 +13,13 @@ layout: default
 
  
       <div class="entry">
-        {{ post.content | strip_html | truncatewords:40}}
+        {{ post.content | strip_html | truncatewords:30}}
       </div>
 <!--      
       <a href="{{ site.baseurl }}{{ post.url }}" class="read-more">더 읽기</a>
 -->
-	  <span class="disqus-comment-count" data-disqus-url="{{ site.url }}{{ post.url }}" data-disqus-identifier="article_1_identifier">First article</span>
-<a href="{{ site.url }}{{ post.url }}#disqus_thread"></a>
+
+<span class="disqus-comment-count" data-disqus-url="{{ site.url }}{{ post.url }}" data-disqus-identifier="article_1_identifier">First article</span>
 
 
     </article>
