@@ -1,6 +1,6 @@
 ---
 layout: post
-tags: javascript 전역변수 스코프 글로벌변수
+tags: javascript 전역변수 오염 스코프 글로벌변수
 ---
 
 #Javascript 전역변수가 오염되는 경우#
