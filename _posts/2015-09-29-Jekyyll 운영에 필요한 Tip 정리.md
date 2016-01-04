@@ -15,6 +15,7 @@ tags: jekyll tip 초보
 
 ### 유용한 링크
 [마크다운 문법 공부](http://scriptogr.am/myevan/post/markdown-syntax-guide-for-scriptogram)
+[마크다운 문법 공부2] (http://milanaryal.com/2015/writing-on-github-pages-and-jekyll-using-markdown/)
 [한글 Jekyll](http://jekyllrb-ko.github.io)
 [초보자를 위한 Jekyll Blog](http://halryang.net/Jekyll-Blogging-For-Beginners/)
 
