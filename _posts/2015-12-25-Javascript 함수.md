@@ -3,9 +3,6 @@ layout: post
 tags: javascript 전역변수 스코프 글로벌변수
 ---
 
-#Javascript 함수#
-Javscript 함수에 대해서 정리 해 보겠습니다.
-
 >참조한 링크
 >- [Function Declarations(함수선언) vs Function Expressions(함수표현)](http://insanehong.kr/post/javascript-function/ "")
 >- [Javascript : 함수(function) 다시 보기](http://www.nextree.co.kr/p4150/)
