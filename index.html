@@ -26,7 +26,7 @@ layout: default
 <!--
 <span class="disqus-comment-count" data-disqus-url="{{ site.url }}{{ post.url }}" data-disqus-identifier="article_1_identifier">First article</span>
 -->
-<a href="{{ site.url }}{{ post.url }}#disqus_thread">First article</a>
+<a href="{{ site.url }}{{ post.url }}#disqus_thread" data-disqus-identifier="{% if post.meta.disqus_id %}{{ post.meta.disqus_id }}{% else %}{{ site.url }}{{ post.url }}{% endif %}">First article</a>
 
     </article>
   {% endfor %}
