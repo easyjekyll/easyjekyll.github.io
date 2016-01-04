@@ -3,12 +3,6 @@ layout: post
 tags: javascript 전역변수 오염 스코프 글로벌변수
 ---
 
-#Javascript 전역변수가 오염되는 경우#
-
-
-
-
-
 >참조한 링크
 >- [자바스크립트의 변수범위와 호이스팅](http://chanlee.github.io/2013/12/10/javascript-variable-scope-and-hoisting/)
 
