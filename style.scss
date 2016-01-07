@@ -33,7 +33,7 @@ body {
 h1, h2, h3, h4, h5, h6 {
   font-family: $helveticaNeue;
   color: $darkerGray;
-  font-weight: bold; 
+/*  font-weight: bold; */
   
   line-height: 1.7;
   margin: 1em 0 15px;
@@ -48,20 +48,38 @@ h1 {
   font-size: 30px;
   a {
     font : inherit;
+    font-weight: bold;
   }
 }
 
 h2 {  
-  font-size: 24px;
+  font-size: 30px;
+  font-weight: bold;
 }
 
 h3 {  
-  font-size: 20px;
+  font-size: 28px;
+  font-weight:400;
 }
 
 h4 {  
-  font-size: 18px;
+  font-size: 26px;
   color: $gray;
+  font-weight:400;
+}
+
+
+h5 {  
+  font-size: 24px;
+  color: $gray;
+  font-weight:400;
+}
+
+
+h6 {  
+  font-size: 22px;
+  color: $gray;
+  font-weight:400;
 }
 
 p {
