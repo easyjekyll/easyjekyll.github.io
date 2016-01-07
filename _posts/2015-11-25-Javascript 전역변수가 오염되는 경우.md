@@ -3,10 +3,8 @@ layout: post
 tags: javascript 전역변수 오염 스코프 글로벌변수
 ---
 
->참조한 링크
->- [자바스크립트의 변수범위와 호이스팅](http://chanlee.github.io/2013/12/10/javascript-variable-scope-and-hoisting/)
-
-
+호이스팅이라던지, 함수와 블럭에서의 this 라던지.. 전역변수를 어지럽히는 경우가 많습니다.
+이러한 경우들을 정리하여, 협업시을 할 때나 모듈을 제공할 때 프로그램이 오작동 하지 않도록 주의 해야겠습니다.
 
 
 ### 전역변수 ###
@@ -93,3 +91,8 @@ var myObj = {
 // 전역변수인 highValue와 constantVal을 사용하여 계산됩니다. 200*2.
 myObj.calculateIt(); //400
 ```
+
+
+>참조한 링크
+>- [자바스크립트의 변수범위와 호이스팅](http://chanlee.github.io/2013/12/10/javascript-variable-scope-and-hoisting/)
+
