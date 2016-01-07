@@ -46,9 +46,9 @@ h1, h2, h3, h4, h5, h6 {
   
 h1 {  
   font-size: 30px;
+  font-weight: bold;
   a {
     font : inherit;
-    font-weight: bold;
   }
 }
 
@@ -64,21 +64,21 @@ h3 {
 
 h4 {  
   font-size: 26px;
-  color: $gray;
+  /* color: $gray;*/
   font-weight:400;
 }
 
 
 h5 {  
   font-size: 24px;
-  color: $gray;
+  /* color: $gray; */
   font-weight:400;
 }
 
 
 h6 {  
   font-size: 22px;
-  color: $gray;
+  /* color: $gray; */
   font-weight:400;
 }
 
