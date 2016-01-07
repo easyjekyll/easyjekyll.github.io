@@ -3,15 +3,7 @@ layout: post
 tags: javascript 전역변수 스코프 글로벌변수
 ---
 
->참조한 링크
->- [Function Declarations(함수선언) vs Function Expressions(함수표현)](http://insanehong.kr/post/javascript-function/ "")
->- [Javascript : 함수(function) 다시 보기](http://www.nextree.co.kr/p4150/)
->- [[리얼타임] You Don’t Know JS 스코프와 클로저](https://books.google.co.kr/books?id=QxrJCQAAQBAJ&pg=PA35&lpg=PA35&dq=%EC%9D%B5%EB%AA%85%ED%95%A8%EC%88%98+%EA%B8%B0%EB%AA%85%ED%95%A8%EC%88%98%EC%9D%98+%EC%B0%A8%EC%9D%B4&source=bl&ots=qTnfOnm69v&sig=jb6BA9DBoDjE4xuo82BsK5exx6o&hl=ko&sa=X&ved=0ahUKEwjM6r2yn4nKAhUD6KYKHaasAtUQ6AEINTAD#v=onepage&q=%EC%9D%B5%EB%AA%85%ED%95%A8%EC%88%98%20%EA%B8%B0%EB%AA%85%ED%95%A8%EC%88%98%EC%9D%98%20%EC%B0%A8%EC%9D%B4&f=false)
-
-
-
-
-
+여러가지 함수 표현식을 알아보고, 각각 어떻게 작동하는지 알아봅시다.
 
 
 ### Javascript는 first-class object 이다. ###
@@ -78,4 +70,10 @@ alert(foo); // "foo" is not defined.
     console.log('익명 즉시실행 함수표현식');
 }());
 ```
+
+>참조한 링크
+>- [Function Declarations(함수선언) vs Function Expressions(함수표현)](http://insanehong.kr/post/javascript-function/ "")
+>- [Javascript : 함수(function) 다시 보기](http://www.nextree.co.kr/p4150/)
+>- [[리얼타임] You Don’t Know JS 스코프와 클로저](https://books.google.co.kr/books?id=QxrJCQAAQBAJ&pg=PA35&lpg=PA35&dq=%EC%9D%B5%EB%AA%85%ED%95%A8%EC%88%98+%EA%B8%B0%EB%AA%85%ED%95%A8%EC%88%98%EC%9D%98+%EC%B0%A8%EC%9D%B4&source=bl&ots=qTnfOnm69v&sig=jb6BA9DBoDjE4xuo82BsK5exx6o&hl=ko&sa=X&ved=0ahUKEwjM6r2yn4nKAhUD6KYKHaasAtUQ6AEINTAD#v=onepage&q=%EC%9D%B5%EB%AA%85%ED%95%A8%EC%88%98%20%EA%B8%B0%EB%AA%85%ED%95%A8%EC%88%98%EC%9D%98%20%EC%B0%A8%EC%9D%B4&f=false)
+
 
