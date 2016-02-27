@@ -22,6 +22,7 @@ tags: Interface AutoWired DI Spring 의존성 주입
 
 ### Interface 의 확장성 ###
 먼저 흔히 볼수 있는 Interface 사용 예제를 보자.
+
 ```java
 //Map Interface 에 HashMap 구현체를 주입
 Map map1 = new HashMap();
@@ -46,6 +47,7 @@ Interface를 상속받는 모든 구현체는 반드시 Interface에서 작성�
 
 웹프로그램에서 Controller.java 를 작성할 때 Service.java 가 어떤 일을 하는지는 관심 밖이다. 다음과 같이 Controller 내에서 User List 객체를 초기화 하는 과정이 있다.
 ###### 클래스 초기화 방법을 통한 객체 생성 방법 ######
+
 ```java
 Service(클래스명) service = new Service();
 List<User> list = service.getUserList();
@@ -54,6 +56,7 @@ Controller 제작자는 service로부터 그저 `List<User>` 타입의 객체를
 Service.java 를 만들어 놓고 getUserList() 메소드에 return null 해 둬도 일단 빌드 하는데 문제는 없겠지만 날코딩 해놨다는 찜찜한 느낌을 지울수가 없다. 이러한 상황에 대처 하라고 JAVA에서 제공 하는 것이 Interface 이고, 이를 중간에 두어 분리하는 것이다.
 
 ###### 인터페이스를 통한 객체 주입 방법 ######
+
 ```java
 Service(인터페이스) service = new ServiceImpl();
 List<User> list = service.getUserList();
@@ -68,12 +71,12 @@ List<User> list = service.getUserList();
 나같은 사람을 위해서 만들어진 것이 @AutoWired 어노테이션 이다.
 팩토리 패턴을 왜 써야하는지. 그리고 내부적으로 어떻게 작동 하는지 몰라도 되게끔 만들어 주기 때문이다.
 아래 소스를 보면 어떠한 구현체를 초기화 하지 않고도 instance 변수를 선언 해 놓으면 알아서 service 변수에 구현체가 담긴 클래스가 주입이 된다.
+
 ```java
 @AutoWired
 Service(인터페이스) service;  // ApplicationContext 가 @Service 를 찾아서 갖고있다가 적절히 주입시켜줌 
 // ...
 List<User> list = service.getUserList(); // error따위 나지 않는다.
-
 ```
 
 
