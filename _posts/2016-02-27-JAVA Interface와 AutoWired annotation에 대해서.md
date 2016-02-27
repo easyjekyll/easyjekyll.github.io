@@ -3,21 +3,21 @@ layout: post
 title: JAVA Interface와 AutoWired annotation에 대해서
 tags: Interface AutoWired DI Spring 의존성 주입
 ---
-# JAVA Interface와 AutoWired annotation에 대해서 #
+
+
+웹프로그램을 개발 하면서 Interface를 이용 하고 구현체를 주입하는 과정이 너무나 불필요 하게 느껴졌다. 
+이미 나는 원하는 결과가 있고, 내가 원하는 클래스를 초기화 하면 되는것 아닌가? 하는 생각이 지배적 일뿐, 확장성을 고려 한다거나 관심사를 분리해야 한다는 생각 까지는 미치지 못했기 때문이다.
+오늘은 Interface 의 특징들을 알아보고, 관심사의 분리를 더욱 완전하게 해주는 @AutoWired annotaion을 사용하여 완성 해 보도록 하자.
 
 
 
-
-
-### Inteface 의 특징 ###
+### Inteface 의 메커니즘 ###
 설명 조차도 너무나 추상적인 Interface 의 특징 들을 알아보자
 1. 구현된 메소드는 올 수 없고 추상 메소드만 정의할 수 있다.
 2. 상속을 받은 일반 클래스는 interface의 추상메서드 전체를 모두 재정의 해 주어야 한다.
 3. 일반 클래스는 여러 interface를 다중 상속 할 수 있다.
 
 
-나 역시도 웹프로그램을 개발 하면서 Interface를 이용 하고 구현체를 주입하는 과정이 너무나 불필요 하게 느껴졌다. 
-이미 나는 원하는 결과가 있고, 내가 원하는 클래스를 초기화 하면 되는것 아닌가? 하는 생각이 지배적 일뿐, 확장성을 고려 한다거나 관심사를 분리해야 한다는 생각 까지는 미치지 못했기 때문이다.
 
 
 ### Interface 의 확장성 ###
