@@ -38,11 +38,7 @@ h1, h2, h3, h4, h5, h6 {
   line-height: 1.7;
   margin: 1em 0 15px;
   padding: 0;
-  border-left : 10px;
-  border-left-style : solid;
-  border-left-color : yellowgreen;
-  border-left-width : 5px;
-  border-left-padding : 10px;
+
 
   @include mobile {
     line-height: 1.4;
@@ -65,12 +61,24 @@ h2 {
 h3 {  
   font-size: 28px;
   font-weight:400;
+  border-left : 10px;
+  border-left-style : solid;
+  border-left-color : yellowgreen;
+  border-left-width : 5px;
+  padding-left : 10px;
 }
 
 h4 {  
   font-size: 26px;
   /* color: $gray;*/
   font-weight:400;
+  font-size: 28px;
+  font-weight:400;
+  border-left : 10px;
+  border-left-style : solid;
+  border-left-color : yellowgreen;
+  border-left-width : 5px;
+  padding-left : 10px;
 }
 
 
