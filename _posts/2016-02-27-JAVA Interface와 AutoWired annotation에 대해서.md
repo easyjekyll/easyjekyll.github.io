@@ -1,3 +1,8 @@
+---
+layout: post
+title: JAVA Interface와 AutoWired annotation에 대해서
+tags: Interface AutoWired DI Spring 의존성 주입
+---
 # JAVA Interface와 AutoWired annotation에 대해서 #
 
 
