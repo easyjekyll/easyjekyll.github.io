@@ -38,10 +38,10 @@ System.out.println(map1.toString());    // {b=b, a=a}
 System.out.println(map2.toString());    // {a=a, b=b} 위 map1 과는 상반된 결과.
 ```
 
->Map Interface를 어떻게 초기화 하느냐에 따라 서로 상반된 결과를 볼수 있다. 
+>Map Interface를 어떤 구현체로 초기화 하느냐에 따라 서로 상반된 결과를 볼수 있다. 
 >처음에 HashMap을 이용하여 개발 했더라도, 추후 put() 한 순서대로 정렬된 출력을 원한다면 LinkeHashMap 으로 구현체를 변경하면 된다.
 >또한 구현체가 변경이 되었더라도 그 이하에서 사용된 .put() .get() 등 구현체의 메소드는 정상적으로 작동 할 것이다.
->Interface를 상속받는 모든 구현체는 반드시 Interface에서 작성된 모든 추상 method를 모두 구현해야만 하는 특징 덕분에 어떤 구현체든 >동일한 메소드가 존재 하기 때문이다.
+>Interface를 상속받는 모든 구현체는 반드시 Interface에서 작성된 모든 추상 method를 모두 구현해야만 하는 특징 덕분에 어떤 구현체든 동일한 메소드가 존재 하기 때문이다.
 
 ### Interface 를 이용한 관심사 분리 ###
 
@@ -68,9 +68,9 @@ List<User> list = service.getUserList();
 ###### 완전한 분리, @AutoWired ######
 위 단점인, Interface를 어떤 구현체로 초기화 해줄지 결정하지 않아도 되기 위해 [팩토리 패턴](http://warmz.tistory.com/entry/Abstract-Factory-Pattern-%EC%B6%94%EC%83%81-%ED%8C%A9%ED%86%A0%EB%A6%AC-%ED%8C%A8%ED%84%B4) 이란것이 존재한다.
 팩토리패턴.. 보고 이해하고 있노라면 현기증이 난다.
-나같은 사람을 위해서 만들어진 것이 @AutoWired 어노테이션 이다.
-팩토리 패턴을 왜 써야하는지. 그리고 내부적으로 어떻게 작동 하는지 몰라도 되게끔 만들어 주기 때문이다.
-아래 소스를 보면 어떠한 구현체를 초기화 하지 않고도 instance 변수를 선언 해 놓으면 알아서 service 변수에 구현체가 담긴 클래스가 주입이 된다.
+나같은 사람을 위해서 만들어진 것이 스프링의 @AutoWired 어노테이션 이다.
+팩토리 패턴을 왜 써야하는지, 그리고 내부적으로 어떻게 작동 하는지 몰라도 되게끔 해준다.
+아래 소스를 보면 어떠한 구현체를 초기화 하지 않고도 instance 변수를 선언 해 놓으면 알아서 @AutoWired가 service 변수에 구현체를 주입 해주게 된다.
 
 ```java
 @AutoWired
@@ -80,5 +80,9 @@ List<User> list = service.getUserList(); // error따위 나지 않는다.
 ```
 
 
->이렇게 하여 확장성이 높고, 관심사가 분리된, 조금 더 객체지향적인 소스가 완성 되었다.
+>Controller 입장에서 전혀 필요없는 service 로직과 분리 되었다. 단지 instance 변수 지역에 Service(인터페이스) 만이 선언되어 있다.
+>내가 필요로 하는 getUserList를 직접 만들어 호출하지 않고 ServiceImpl 개발자에게는 인터페이스 정보면 알려주면 알아서 각 메소드별로 재정의를 해 줄 것이다. (관심사의 분리) 
+>추후 구현체를 변경 하였을때 내부적으로는 재정의를 어떻게 하느냐에 따라 결과는 완전히 달라 지겠지만, 같은 Interface를 재 정의 하고 있다면 얼마든지 변경이 가능하다. (확장성 고려)
+>또한 super 업체가 만든 Controller를 A업체와 B업체에서 가져다 쓴다고 할 때, 각 업체에서 갖고있는 DB가 다르고 `List<User>` 객체를 만들어 주는 방식이 다를 지라도, 얼마든지 Controller는 영향을 받지 않고 사용될 수 있다.  (낮은 결합도)
+>확장성이 높고, 관심사가 분리된, 조금 더 객체지향적인 소스가 완성 되었다.
 
