@@ -22,14 +22,13 @@ tags: Interface AutoWired DI Spring 의존성 주입
 
 ### Interface 의 확장성 ###
 먼저 흔히 볼수 있는 Interface 사용 예제를 보자.
+
 ```java
-//Map Interface 에 HashMap 구현체를 주입
-Map map1 = new HashMap();
+Map map1 = new HashMap(); //Map Interface 에 HashMap 구현체를 주입
 map1.put("a","a");
 map1.put("b","b");
 
-// Map Interface 에 LinkedHashMap 구현체를 주입
-Map map2 = new LinkedHashMap();
+Map map2 = new LinkedHashMap();  // Map Interface 에 LinkedHashMap 구현체를 주입
 map2.put("a","a");
 map2.put("b","b");
 
