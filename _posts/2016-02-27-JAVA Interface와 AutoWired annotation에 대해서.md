@@ -47,6 +47,7 @@ System.out.println(map2.toString());    // {a=a, b=b} 위 map1 과는 상반된 
 
 ###### 클래스 초기화 방법을 통한 객체 생성 방법 ######
 다음 예제는 일반 클래스를 new 키워드로 초기화 하는 소스로써, 클래스간의 의존성이 존재하므로 높은 결합도를 보인다.
+
 ```java
 Service(클래스명) service = new Service();
 List<User> list = service.getUserList();
