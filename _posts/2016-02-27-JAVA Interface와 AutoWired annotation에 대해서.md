@@ -43,17 +43,22 @@ System.out.println(map2.toString());    // {a=a, b=b} 위 map1 과는 상반된 
 >또한 구현체가 변경이 되었더라도 그 이하에서 사용된 .put() .get() 등 구현체의 메소드는 정상적으로 작동 할 것이다.
 >Interface를 상속받는 모든 구현체는 반드시 Interface에서 작성된 모든 추상 method를 모두 구현해야만 하는 특징 덕분에 어떤 구현체든 동일한 메소드가 존재 하기 때문이다.
 
-### Interface 를 이용한 관심사 분리 ###
+### 기존 new 객체() 의 문제점 ###
 
-웹프로그램에서 Controller.java 를 작성할 때 Service.java 가 어떤 일을 하는지는 관심 밖이다. 다음과 같이 Controller 내에서 User List 객체를 초기화 하는 과정이 있다.
 ###### 클래스 초기화 방법을 통한 객체 생성 방법 ######
-
+다음 예제는 일반 클래스를 new 키워드로 초기화 하는 소스로써, 클래스간의 의존성이 존재하므로 높은 결합도를 보인다.
 ```java
 Service(클래스명) service = new Service();
 List<User> list = service.getUserList();
 ```
->Controller 제작자는 service로부터 그저 `List<User>` 타입의 객체를 잘 반환 해 주기를 기대 할 뿐이고, getUserList가 DB처리를 하고 어떻게 가공 하는지 알고싶지 않다. 그것은 service 개발자의 몫일뿐... (공감하기 어렵다면 역할의 분리에 촛점을 맞추고 바라보자. )
-Service.java 를 만들어 놓고 getUserList() 메소드에 return null 해 둬도 일단 빌드 하는데 문제는 없겠지만 날코딩 해놨다는 찜찜한 느낌을 지울수가 없다. 이러한 상황에 대처 하라고 JAVA에서 제공 하는 것이 Interface 이고, 이를 중간에 두어 분리하는 것이다.
+>Controller 제작자는 Service로부터 getUserList() 메소드를 통해  `List<User>` 타입의 객체를 잘 반환 해 주기를 기대 할 뿐이고, getUserList가 DB처리를 어떻게 하고 또 어떻게 가공 하는지 알고싶지 않다. 그것은 service 개발자의 몫일뿐... (공감하기 어렵다면 역할의 분리에 촛점을 맞추고 바라보자)
+그럼에도 불구하고, 위 소스는 Service 클래스가 변경 될 경우, Controller 에도 영향을 주게 된다. getUserList의 return Type 이 변경 되거나 인자가 변경되거나 메소드명이 변경 되는 경우가 그러하다.
+
+###### 가라 코딩 retrun null ######
+Service.java 의 구체적인 구현은 전혀 모르더라도 인자 타입과 리턴 타입은 알것 같을때 주로 했던 방식이, 메소드 껍데기와 return Type에 null을 주어서 에러 없이 빌드 되게끔 만들어 놓고 진행 했었다.
+물론 빌드에 문제는 없겠지만 날코딩 해놨다는 찜찜한 느낌을 지울수가 없다. 이러한 상황에 대처 하라고 JAVA에서 제공 하는 것이 Interface 이고, 이를 중간에 두어 분리하는 것이다.
+
+### Interface 를 이용한 관심사 분리 ###
 
 ###### 인터페이스를 통한 객체 주입 방법 ######
 
