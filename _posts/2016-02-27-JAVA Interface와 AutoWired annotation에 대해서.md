@@ -75,7 +75,8 @@ List<User> list = service.getUserList();
 위 단점인, Interface를 어떤 구현체로 초기화 해줄지 결정하지 않아도 되기 위해 [팩토리 패턴](http://warmz.tistory.com/entry/Abstract-Factory-Pattern-%EC%B6%94%EC%83%81-%ED%8C%A9%ED%86%A0%EB%A6%AC-%ED%8C%A8%ED%84%B4) 이란것이 존재한다.
 팩토리패턴.. 보고 이해하고 있노라면 현기증이 난다.
 나같은 사람을 위해서 만들어진 것이 스프링의 @AutoWired 어노테이션 이다.
-팩토리 패턴을 왜 써야하는지, 그리고 내부적으로 어떻게 작동 하는지 몰라도 되게끔 해준다.
+팩토리 패턴을 왜 써야 하는지, 그리고 내부적으로 어떻게 작동 하는지 몰라도 되게끔 해준다.
+(주입을 위해 필요한 ApplicationContext 설정방법에 대해서는 포스팅 따로 하도록 하겠다.)
 아래 소스를 보면 어떠한 구현체를 초기화 하지 않고도 instance 변수를 선언 해 놓으면 알아서 @AutoWired가 service 변수에 구현체를 주입 해주게 된다.
 
 ```java
