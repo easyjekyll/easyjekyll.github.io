@@ -71,12 +71,12 @@ List<User> list = service.getUserList();
 >이렇게 해두면, ServiceImpl을 작성 하는 개발자에게 Service Interface만 제공을 하면 되고, 이때 소스상 명시적으로 '내가 getUserList() 를 호출 할 테니 알아서 List<User> 타입의 Object를 반화하는 구현체를 만들어 달라' 는 약속을 하게 되는 것과 같다. (Interface의 특징 2번)
 하지만 이것도 사용자 입장 에서는 new ServiceImpl() 이라던지, new OnotherServiceImpl() 이라던지.. 구현체 클래스 이름을 정확히 알고 있어야만 코딩을 할 수 있다는 단점이 있다.
 
-###### 완전한 분리, @AutoWired ######
-위 단점인, Interface를 어떤 구현체로 초기화 해줄지 결정하지 않아도 되기 위해 [팩토리 패턴](http://warmz.tistory.com/entry/Abstract-Factory-Pattern-%EC%B6%94%EC%83%81-%ED%8C%A9%ED%86%A0%EB%A6%AC-%ED%8C%A8%ED%84%B4) 이란것이 존재한다.
+###### @AutoWired를 통한 객체 주입 방법 ######
+위의 `인터페이스를 통한 객체 주입 방법`의 단점인, Interface를 어떤 구현체로 초기화 해줄지에 대해서 결정하지 않도록 하기 위해 [팩토리 패턴](http://warmz.tistory.com/entry/Abstract-Factory-Pattern-%EC%B6%94%EC%83%81-%ED%8C%A9%ED%86%A0%EB%A6%AC-%ED%8C%A8%ED%84%B4) 이란것이 존재한다.
 팩토리패턴.. 보고 이해하고 있노라면 현기증이 난다.
 나같은 사람을 위해서 만들어진 것이 스프링의 @AutoWired 어노테이션 이다.
-팩토리 패턴을 왜 써야 하는지, 그리고 내부적으로 어떻게 작동 하는지 몰라도 되게끔 해준다.
-(주입을 위해 필요한 ApplicationContext 설정방법에 대해서는 포스팅 따로 하도록 하겠다.)
+팩토리 패턴을 왜 써야 하는지, 그리고 내부적으로 어떻게 작동 하는지 몰라도 되게끔 해준다. 그리고 추후 구현체가 변경 되더라도, xml 파일만 변경하면 되니 컴파일도 필요 없다.
+(주입을 위해 필요한 ApplicationContext.xml 설정 방법에 대해서는 포스팅 따로 하도록 하겠다.)
 아래 소스를 보면 어떠한 구현체를 초기화 하지 않고도 instance 변수를 선언 해 놓으면 알아서 @AutoWired가 service 변수에 구현체를 주입 해주게 된다.
 
 ```java
