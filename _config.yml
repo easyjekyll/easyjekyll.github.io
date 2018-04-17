@@ -88,3 +88,5 @@ exclude:
     - README.md
 
 paginate: 5
+
+theme: jekyll-theme-cayman
