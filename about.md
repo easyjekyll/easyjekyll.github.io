@@ -4,12 +4,20 @@ title: About
 permalink: /about/
 ---
 
-Some information about you!
+Web Developer
 
-### More Information
+### Skil inventory
 
-A place to include any other types of information that you'd like to include about yourself. 
+
+- JAVA, PHP, JavaScript & jQuery
+- Mysql, Oracle
+- Linux, Windows Server 2008
+- GitHub, slack, trello, eclipse
+
+
+### Hobby 
+
 
 ### Contact me
 
-[email@domain.com](mailto:email@domain.com)
+[vjava114@gmail.com](mailto:vjava114@gmail.com)

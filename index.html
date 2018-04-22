@@ -1,6 +1,13 @@
 ---
 layout: default
 ---
+
+<script id="dsq-count-scr" src="http://vjava114.disqus.com/count.js" async></script>
+<script type="text/javascript">
+  var disqus_shortname = "{{site.disqus}}";
+  
+</script>
+
 <!-- This loops through the paginated posts -->
 <div class="posts">
   {% for post in paginator.posts %}
@@ -8,11 +15,20 @@ layout: default
       
       <h1><a href="{{ site.baseurl }}{{ post.url }}">{{ post.title }}</a></h1>
 
+ 
       <div class="entry">
-        {{ post.content | strip_html | truncatewords:40}}
+        {{ post.content | strip_html | truncatewords:30}}
       </div>
-      
+<!--      
       <a href="{{ site.baseurl }}{{ post.url }}" class="read-more">더 읽기</a>
+-->
+
+<!--
+<span class="disqus-comment-count" data-disqus-url="{{ site.url }}{{ post.url }}" data-disqus-identifier="article_1_identifier">First article</span>
+-->
+<!--<a href="{{ site.url }}{{ post.url }}#disqus_thread" data-disqus-identifier="{{ post.url }}">First article</a> -->
+<a href="{{ post.url }}index.html#disqus_thread" data-disqus-identifier="{{post.url}}"></a>
+
     </article>
   {% endfor %}
 </div>

@@ -12,12 +12,12 @@ layout: default
 
     
 
-<br>
+
   <div class="entry">
     {{ content }}
   </div>
 
-<br>
+
   <div>
     <ul class="tags post-tags cf">
       <li>Tagged:</li>
@@ -30,13 +30,7 @@ layout: default
   <hr>
 
   {% include disqus.html disqus_identifier=page.disqus_identifier %}
-  
-
-
-
 </article>
 
 <!-- responsive video js -->
 <script src="/js/fluidvids.js"></script>
-
-

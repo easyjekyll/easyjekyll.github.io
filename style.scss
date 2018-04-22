@@ -33,11 +33,12 @@ body {
 h1, h2, h3, h4, h5, h6 {
   font-family: $helveticaNeue;
   color: $darkerGray;
-  font-weight: bold;
+/*  font-weight: bold; */
   
   line-height: 1.7;
   margin: 1em 0 15px;
   padding: 0;
+
 
   @include mobile {
     line-height: 1.4;
@@ -46,26 +47,58 @@ h1, h2, h3, h4, h5, h6 {
   
 h1 {  
   font-size: 30px;
+  font-weight: bold;
   a {
-    color: inherit;
+    font : inherit;
   }
 }
 
 h2 {  
-  font-size: 24px;
+  font-size: 30px;
+  font-weight: bold;
 }
 
 h3 {  
-  font-size: 20px;
+  font-size: 28px;
+  font-weight:400;
+  border-left : 10px;
+  border-left-style : solid;
+  border-left-color : yellowgreen;
+  border-left-width : 5px;
+  padding-left : 10px;
 }
 
 h4 {  
-  font-size: 18px;
-  color: $gray;
+  font-size: 26px;
+  /* color: $gray;*/
+  font-weight:400;
+  font-size: 28px;
+  font-weight:400;
+  border-left : 10px;
+  border-left-style : solid;
+  border-left-color : yellowgreen;
+  border-left-width : 5px;
+  padding-left : 10px;
+}
+
+
+h5 {  
+  font-size: 24px;
+  /* color: $gray; */
+  font-weight:400;
+}
+
+
+h6 {  
+  font-size: 22px;
+  /* color: $gray; */
+  font-weight:400;
 }
 
 p {
-  margin: 15px 0;
+  margin-top: 15px;
+  margin-bottom: 15px;
+  
 }
 
 a {
@@ -248,12 +281,13 @@ nav {
 
 .post { 
   blockquote {
-    margin: 1.8em .8em;
-    border-left: 2px solid $gray;
-    padding: 0.1em 1em;
+    margin: 1.8em 0.8em;
+    border-left: 3px solid $gray;
+    padding-left: 1em;
+    padding-top: 0.1em;
+    padding-bottom: 0.1em;
     color: $gray;
-    font-size: 22px;
-    font-style: italic;
+    font-size: 18px;
   }
 
   .comments {
@@ -392,7 +426,12 @@ padding-left:20px;
   font-size: 10px;
   font-size: 0.625rem;
 }
-
+.entry {
+    font-weight:300;
+}
+.post h1 a{
+     font-weight:400 ;     
+}
 // Settled on moving the import of syntax highlighting to the bottom of the CSS
 // ... Otherwise it really bloats up the top of the CSS file and makes it difficult to find the start
 @import "_highlights";
